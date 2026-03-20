@@ -2,11 +2,8 @@
 
 <p align="center">
   <b>Yellow Cab Chaos is a fully deployed, production-ready system that:
-    
 Ingests live official government data from the NYC Taxi & Limousine Commission (TLC)
-
 Forecasts hourly taxi demand per taxi zone for the next 7–30 days
-
 Delivers an interactive Streamlit dashboard with real-time hotspot maps, what-if analysis, and retention/optimization recommendations for drivers and fleet operators
 </b><br>
   Built with real-world data, time-series features & deployed via Streamlit
@@ -83,21 +80,21 @@ yellow-cab-chaos/
 
 │
 
-├── data/
+├── data/ # Raw data, processed and external data
 
-├── documentation/
+├── documentation/ # Detailed PDFs
 
-├── models/
+├── models/  # Trained models
 
-├── notebooks/
+├── notebooks/ # Jupyter Notebooks
 
-├── outputs/
+├── outputs/ 
 
-├── scripts/
+├── scripts/ 
 
-├── viz/ 
+├── viz/  # Visualization plots
 
-├── app.py
+├── app.py # Streamlit App
 
 ├── requirements.txt
 
@@ -112,27 +109,34 @@ https://drive.google.com/drive/folders/17wlbpf0HiageU6pziJ8k835kza2EiQ7E?usp=sha
 
 ---
 
-## 💻 How to Run Locally
-
+## How to Run Locally
 ```bash
 git clone https://github.com/yourusername/yellow-cab-chaos.git
 cd yellow-cab-chaos
 ```
-### Create virtual environment
-``` python -m venv venv ```
+
+**Create virtual environment**
+```bash
+python -m venv venv
+```
 
 ### Activate environment
-### Windows
-``` venv\Scripts\activate ```
 
-### Mac/Linux
-``` source venv/bin/activate ```
-
+**Windows:**
+```bash
+venv\Scripts\activate
+```
+**Mac/Linux:**
+```bash
+source venv/bin/activate
+```
 ### Install dependencies
-``` pip install -r requirements.txt ```
-
+```bash
+pip install -r requirements.txt
+```
 ### Run Streamlit app
-``` streamlit run app.py ```
+```bash streamlit run app.py 
+```
 
 ## 📸 Project Preview
 
@@ -142,7 +146,7 @@ cd yellow-cab-chaos
 ### 📈 Top 15 Zones by Total Trip volume
 ![Top 15 zones](viz/by_zone_barplot.png)
 
-### 🌐 Actual vs Predicted
+### 🌐 Actual vs Predicted (JFK Airport)
 ![Actual vs Predicted](viz/jfk_actual_vs_predicted.png)
 
 ### 🌐 Streamlit App
@@ -180,14 +184,30 @@ cd yellow-cab-chaos
 
 - Building end-to-end ML projects
 
-## 📜 License
+---
 
-This project is licensed under the MIT License – see the [LICENSE](https://github.com/twbs/bootstrap/blob/main/LICENSE) file for details.
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE.txt) file for details.
+
+---
 
 ## 🙌 Acknowledgements
 
-*NYC Taxi & Limousine Commission (TLC)*
+| Source | Description |
+|--------|-------------|
+| 🚕 [NYC Taxi & Limousine Commission (TLC)](https://www.nyc.gov/site/tlc/index.page) | Official trip record data used in this project |
 
-⭐ If you found this useful, consider giving it a star!
+---
 
-Made with 💖 by *Jovin Ryan Samuel*
+<div align="center">
+
+⭐ **If you found this useful, consider giving it a star!** ⭐
+
+---
+
+*Made with 💖 by **Jovin Ryan Samuel***
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jovinryan20/)
+
+</div>
