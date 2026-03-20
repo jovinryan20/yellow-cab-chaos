@@ -12,5 +12,4 @@ __pycache__/
 
 # Ignore large files
 *.parquet
-*.csv
 *.zip
