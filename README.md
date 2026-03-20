@@ -5,7 +5,8 @@
 Ingests live official government data from the NYC Taxi & Limousine Commission (TLC)
 Forecasts hourly taxi demand per taxi zone for the next 7–30 days
 Delivers an interactive Streamlit dashboard with real-time hotspot maps, what-if analysis, and retention/optimization recommendations for drivers and fleet operators
-</b><br>
+</b>
+  <br><br>
   Built with real-world data, time-series features & deployed via Streamlit
 </p>
 
@@ -80,21 +81,21 @@ yellow-cab-chaos/
 
 │
 
-├── data/ # Raw data, processed and external data
+├── data/             # Raw data, processed and external data
 
-├── documentation/ # Detailed PDFs
+├── documentation/    # Detailed PDFs
 
-├── models/  # Trained models
+├── models/           # Trained models
 
-├── notebooks/ # Jupyter Notebooks
+├── notebooks/        # Jupyter Notebooks
 
 ├── outputs/ 
 
 ├── scripts/ 
 
-├── viz/  # Visualization plots
+├── viz/             # Visualization plots
 
-├── app.py # Streamlit App
+├── app.py           # Streamlit App
 
 ├── requirements.txt
 
@@ -109,7 +110,7 @@ https://drive.google.com/drive/folders/17wlbpf0HiageU6pziJ8k835kza2EiQ7E?usp=sha
 
 ---
 
-## How to Run Locally
+## How to Run Locally 🔗
 ```bash
 git clone https://github.com/yourusername/yellow-cab-chaos.git
 cd yellow-cab-chaos
@@ -135,7 +136,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 ### Run Streamlit app
-```bash streamlit run app.py 
+```bash
+streamlit run app.py 
 ```
 
 ## 📸 Project Preview
