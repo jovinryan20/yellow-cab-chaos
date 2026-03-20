@@ -2,8 +2,11 @@
 
 <p align="center">
   <b>Yellow Cab Chaos is a fully deployed, production-ready system that:
+    
 Ingests live official government data from the NYC Taxi & Limousine Commission (TLC)
+
 Forecasts hourly taxi demand per taxi zone for the next 7–30 days
+
 Delivers an interactive Streamlit dashboard with real-time hotspot maps, what-if analysis, and retention/optimization recommendations for drivers and fleet operators
 </b><br>
   Built with real-world data, time-series features & deployed via Streamlit
@@ -22,6 +25,10 @@ Ride-sharing and taxi companies lose millions every year because drivers idle in
 - Real-world users: Fleet operators, ride-hailing apps, urban planners, NYC TLC itself
 
 *Complete Project Report* : https://docs.google.com/document/d/1gHOlmyPJuiRTTmnNUgF-0DptxpQyJkgV6hfJ9CorHUA/edit?usp=sharing
+
+### 🌐 Live Demo
+
+👉 *https://yellow-cab-chaos-jovinryan20.streamlit.app/*
 
 ---
 
@@ -91,7 +98,9 @@ yellow-cab-chaos/
 ├── viz/ 
 
 ├── app.py
+
 ├── requirements.txt
+
 └── README.md
 
 ## Data
@@ -108,26 +117,22 @@ https://drive.google.com/drive/folders/17wlbpf0HiageU6pziJ8k835kza2EiQ7E?usp=sha
 ```bash
 git clone https://github.com/yourusername/yellow-cab-chaos.git
 cd yellow-cab-chaos
+```
+### Create virtual environment
+``` python -m venv venv ```
 
-# Create virtual environment
-python -m venv venv
+### Activate environment
+### Windows
+``` venv\Scripts\activate ```
 
-# Activate environment
-# Windows
-venv\Scripts\activate
+### Mac/Linux
+``` source venv/bin/activate ```
 
-# Mac/Linux
-source venv/bin/activate
+### Install dependencies
+``` pip install -r requirements.txt ```
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Run Streamlit app
-streamlit run app.py
-
-🌐 Live Demo
-
-👉 Add your Streamlit link here
+### Run Streamlit app
+``` streamlit run app.py ```
 
 ## 📸 Project Preview
 
@@ -141,46 +146,48 @@ streamlit run app.py
 ![Actual vs Predicted](viz/jfk_actual_vs_predicted.png)
 
 ### 🌐 Streamlit App
-![App UI](viz/app_ui.png)
+![App UI](viz/streamlitapp_preview.png)
 
-⚠️ Limitations
+## ⚠️ Limitations
 
-No external data (weather, events, traffic)
+- No external data (weather, events, traffic)
 
-High error in low-demand zones
+- High error in low-demand zones
 
-Single global model
+- Single global model
 
-Not production-ready
+- Not production-ready
 
-📈 Future Improvements
+## 📈 Future Improvements
 
-Add weather & event data
+- Add weather & event data
 
-Train zone-wise models
+- Train zone-wise models
 
-Use LSTM / deep learning
+- Use LSTM / deep learning
 
-Add prediction intervals
+- Add prediction intervals
 
-Deploy with CI/CD
+- Deploy with CI/CD
 
-📚 What I Learned
+## 📚 What I Learned
 
-Time-based train-test split is crucial
+- Time-based train-test split is crucial
 
-Feature engineering > model complexity
+- Feature engineering > model complexity
 
-Handling zero-heavy time series
+- Handling zero-heavy time series
 
-Building end-to-end ML projects
+- Building end-to-end ML projects
 
-📜 License
+## 📜 License
 
-MIT License
+This project is licensed under the MIT License – see the [LICENSE](https://github.com/twbs/bootstrap/blob/main/LICENSE) file for details.
 
-🙌 Acknowledgements
+## 🙌 Acknowledgements
 
-NYC Taxi & Limousine Commission (TLC)
+*NYC Taxi & Limousine Commission (TLC)*
 
 ⭐ If you found this useful, consider giving it a star!
+
+Made with 💖 by *Jovin Ryan Samuel*
